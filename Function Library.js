@@ -859,9 +859,11 @@ function imageSwap(num)
 	var image3=document.images[3].src
 	var temp=document.images[0].src
 
-	if(image1=="file:///C:/Users/Aditya%20Singh/Documents/HTML/Assignment/Blank%20Square%201.png"||image2=="file:///C:/Users/Aditya%20Singh/Documents/HTML/Assignment/Blank%20Square%202.png"||image3=="file:///C:/Users/Aditya%20Singh/Documents/HTML/Assignment/Blank%20Square%203.png")
+	if(document.images[1].src!="Blank Square 1.png" && document.images[2].src!="Blank Square 2.png" && document.images[3].src!="Blank Square 3.png")
 	{
 		image1=document.images[1].src
+		image2=document.images[2].src
+		image3=document.images[3].src
 	}
 
 	else
