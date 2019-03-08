@@ -1,0 +1,37 @@
+<html>
+<head>
+<script src="Function Library.js">
+</script>
+<link rel="stylesheet" href="CSS File.css">
+</head>
+<body>
+<h1 class="hometitle">register an account</h1>
+<form action = 'form.php' name="registration" method="POST">
+<table width="100%" border="0">
+<tr>
+<td><h1 class="pagetext">Username</h1></td>
+<td class="register"><input type="text" name="txtusernamereg"></td>
+</tr>
+<tr>
+<td><h1 class="pagetext">Password</h1></td>
+<td class="register"><input type="text" name="txtpasswordreg"></td>
+</tr>
+<tr>
+<td><h1 class="pagetext">Confirm Password</h1></td>
+<td class="register"><input type="text" name="txtpasswordconfirm"></td>
+</tr>
+<tr>
+<td><h1 class="pagetext">Address</h1></td>
+<td class="register"><textarea name="txtaddress" height="2"></textarea></td>
+</tr>
+<tr>
+<td><h1 class="pagetext">Full Name</h1></td>
+<td class="register"><input type="text" name="txtfullname"></td>
+</tr>
+<tr>
+<td colspan="2" class="register"><input class="registrationButton" type="button" value="Submit" onclick="registrationForm()"><input class="registrationButton" type="reset"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
