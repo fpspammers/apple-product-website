@@ -853,20 +853,14 @@ function ProductSelect()
 
 function imageSwap(num)
 {
-	var Main=document.images[0].src
+	var main=document.images[0].src
 	var image1=document.images[1].src
 	var image2=document.images[2].src
 	var image3=document.images[3].src
 	var temp=document.images[0].src
+	var blankimgpattern=/BlankSquare1.png$/
 
-	if(document.images[1].src!="Blank Square 1.png" && document.images[2].src!="Blank Square 2.png" && document.images[3].src!="Blank Square 3.png")
-	{
-		image1=document.images[1].src
-		image2=document.images[2].src
-		image3=document.images[3].src
-	}
-
-	else
+	if(!blankimgpattern.test(image1))
 	{
 		if(num==0)
 		{
