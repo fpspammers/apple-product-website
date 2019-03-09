@@ -1,0 +1,46 @@
+<html>
+<head>
+<script src="Function Library.js">
+</script>
+<link rel="stylesheet" href="CSS File.css">
+</head>
+<body>
+<h1 class="hometitle">shipping calculator</h1>
+<form name="calculator">
+<table class="content" border="0" align="center">
+<tr>
+<td class="content">
+<select onclick="ProductName()" name="ProductNames">
+<option selected value="default">Select a Product</option>
+<option value="iMac Pro">iMac Pro</option>
+<option value="iPad">iPad</option>
+<option value="iPhone">iPhone</option>
+<option value="MacBook">MacBook</option>
+</select>
+</td>
+</tr>
+<tr>
+<td class="content" id="options">
+
+</td>
+</tr>
+<tr>
+<td class="content">
+<select name="locations">
+<option selected value="default">Select a City</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Chennai">Chennai</option>
+<option value="Delhi">Delhi</option>
+<option value="Bangalore">Bangalore</option>
+</select>
+</td>
+</tr>
+<tr>
+<td><input readonly="true" type="text" name="txtshipping"></td>
+</tr>
+<tr>
+<td class="content"><input type="button" value="Shipping Details" onclick="shippingDetails()"></td>
+</table>
+</form>
+</body>
+</html>

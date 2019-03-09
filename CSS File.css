@@ -1,0 +1,69 @@
+div.TopBar {background-color:606060; padding: 20px;}
+
+div.content {background-color: 303030; height: 1000px;}
+
+div.homecontent {background-color: 606060; width: 100%; height: 500px}
+
+div.newproductcontent {background-color: 303030; width: 100%; height: 200px}
+
+div.timer {background-color: 101010; height: 500px}
+
+div.productpage {background-color: 303030; height: 500px; vertical-align: middle;}
+
+input[name=TopBar] {padding: 20px 60px}
+
+input[type=search] {padding: 20px 100px}
+
+input[name=calculatorbutton] {padding: 20px 60px}
+
+input[name=txtshipping] {width:300px; padding: 10px}
+
+input[name=Macbookbtn] {padding: 10px 20px}
+
+input[name=txtmacbookprice] {padding: 10px 60px}
+
+h1{color: FFFFFF; font-family: Neoteric; text-align: Center}
+
+h1.smalltext {color: FFFFFF; font-family: Neoteric; text-align: Center; font-size: 20px}
+
+h1.hometitle {color: FFFFFF; font-family: Baron Neue; text-align: Center; font-size: 40px}
+
+h1.productcontent {color: FFFFFF; font-family: Baron Neue; text-align: Center; font-size: 30px}
+
+h1.pagetext {color: FFFFFF; font-family: Neou; text-align: Center; font-size: 15px}
+
+h1.newproducttext {color: FFFFFF; font-family: Neou; text-align: Center; font-size: 25px}
+
+h1.categoriestext {color: FFFFFF; font-family: Neou; text-align: Center; font-size: 40px}
+
+font.timertext {color: FFFFFF; font-family: Neou; font-size: 20px; text-align: center}
+
+td.timercontent {text-align:center; vertical-align: center; padding: 50px; width: 50%}
+
+td.timercontent2 {padding: 35px}
+
+table.content {text-align:center; vertical-align:center; width:100%;}
+
+td.content {text-align:center; vertical-align: center; padding: 50px}
+
+td.productcontent {text-align:center; vertical-align: center; padding: 30px}
+
+td.newproduct {text-align:center; vertical-align: center;} 
+
+td.otherimages {text-align:center; vertical-align: center; padding: 30px; width:20%}
+
+td.register {text-align:center; padding:40px}
+
+.registrationButton{padding:20px}
+
+table.classtable {text-align: center; width:70%}
+
+td.classtable1 {text-align: center;}
+
+td.classtable {text-align: center; border: none}
+
+td.productimage {text-align:center; vertical-align: center; height: 400px; width: 60%}
+
+object.productcontent {text-align: center; vertical-align: center;}
+
+.maintitle{color: FFFFFF; font-family: Baron Neue; text-align: Center; font-size: 40px}

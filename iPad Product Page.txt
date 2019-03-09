@@ -1,0 +1,37 @@
+<html>
+<head>
+<script src="Function Library.js">
+</script>
+<link rel="stylesheet" href="CSS File.css">
+</head>
+<body>
+<h1 class="hometitle">Mac product page</h1>
+<form name="MacbookForm">
+<center><table width="100%" border="0">
+<tr>
+<td colspan="3" class="productimage"><img src="new_2017_imac_pro_dark_grey_front.png" width="400" height="337"></td>
+<td rowspan="2">
+<div class="productpage">
+<object id="productcontent" width="100%" height="100%" data="Product Content Default.html">
+</div>
+</td>
+</tr>
+<tr>
+<td class="otherimages"><img src="Blank Square 1.png" onmouseover="imageSwap(0)" onmouseout="imageSwap(3)"></td>
+<td class="otherimages"><img src="Blank Square 2.png" onmouseover="imageSwap(1)" onmouseout="imageSwap(4)"></td>
+<td class="otherimages"><img src="Blank Square 3.png" onmouseover="imageSwap(2)" onmouseout="imageSwap(5)"></td>
+</tr>
+<tr>
+<td class="productcontent" colspan="5">
+<h1 class="pagetext">iMac Pro <input type="radio" value="iMac Pro" name="Macbookbtn" onclick="ProductSelect()">
+Mac Pro <input type="radio" value="Mac Pro" name="Macbookbtn" onclick="ProductSelect()">
+iMac 5k <input type="radio" value="iMac 5k" name="Macbookbtn" onclick="ProductSelect()"><br><br>
+</td>
+</tr>
+<tr>
+<td class="productcontent" colspan="5"><input type="text" name="txtmacbookprice"></td>
+</tr>
+</body>
+</html>
+</body>
+</html>

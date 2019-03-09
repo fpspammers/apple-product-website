@@ -1,0 +1,56 @@
+<html>
+<head>
+<script src="Function Library.js">
+</script>
+<link rel="stylesheet" href="CSS File.css">
+</head>
+<body>
+<h1 class="hometitle">discounts</h1>
+<form name="exchangeForm">
+<center><table width="100%" border="0">
+<tr>
+<td class="register" colspan="2"><h1 class="categoriestext">Old Product</h1></td>
+</tr>
+<tr>
+<td class="register"><h1 class="smalltext">Choose the type of product to exchange</h1></td>
+<td class="register">
+<select name="oldProduct" onclick="productExchange()">
+<option selected value="Default">--Product--</option>
+<option value="Mac">Mac</option>
+<option value="Macbook">Macbook</option>
+<option value="iPad">iPad</option>
+<option value="iPhone">iPhone</option>
+</select>
+</td>
+</tr>
+<tr>
+<td class="register"><h1 class="smalltext">Choose year of Purchase</h1></td>
+<td class="register">
+<select name="PurchaseYear">
+<option selected value="Default">--Year--</option>
+<option value="2016">2016</option>
+<option value="2015">2015</option>
+<option value="2014">2014</option>
+<option value="2013">2013</option>
+</select></td>
+</tr>
+<tr>
+<td class="register" colspan="2"><h1 class="categoriestext">New Product</h1></td>
+</tr>
+<tr>
+<td class="register"><h1 class="smalltext">Choose Product to Purchase</h1></td>
+<td class="register" id="options">
+
+</td>
+</tr>
+<tr>
+<td class="register"><h1 class="smalltext">Discount</h1></td>
+<td class="register">
+<input type="text" name="txtfinalprice"><br><br>
+<input type="button" value="Price" onclick="exchangeCalculator()">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

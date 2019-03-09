@@ -1,0 +1,13 @@
+<html>
+<head>
+<script src="Function Library.js">
+</script>
+<link rel="stylesheet" href="CSS File.css">
+</head>
+<body>
+<h1 class="productcontent">iMac pro</h1><center><br><br><br><br>
+<input type="button" name="Macbookbtn" value="6-Core Mac Pro" onclick=""><br><br><br><br>
+<input type="button" name="Macbookbtn" value="8-Core Mac Pro" onclick=""><br><br><br><br>
+<input type="button" name="Macbookbtn" value="10-Core Mac Pro" onclick="">
+</body>
+</html>
