@@ -5,7 +5,7 @@
 </head>
 <body>
 <h1 class="hometitle">Login page</h1>
-<form name="login">
+<form action = "login.php" method="POST" name="login">
 <table cellpadding="20px" width="100%" border="0">
 <tr>
 <td width="50%"><h1>User Name</h1></td>
@@ -13,10 +13,10 @@
 </tr>
 <tr>
 <td><h1>Password</h1></td>
-<td><center><input type="password" name="txtpassword"></center></td>
+<td><center><input type="text" name="txtpassword"></center></td>
 </tr>
 <tr>
-<td colspan="2"><center><input type="button" value="Login" onclick="loginPage()">
+<td colspan="2"><center><input type="submit" value="Login" onclick="loginPage()">
 <input type="reset"></center></td>
 </tr>
 <tr>
