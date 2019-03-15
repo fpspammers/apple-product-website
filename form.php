@@ -1,6 +1,6 @@
 <?php
 //connecting to database
-$conn = mysqli_connect('localhost','temp','unlockstackframe','stackframe');
+$conn = mysqli_connect('localhost','apple_user','apple_user','apple_database');
 
 //flag variable to check if all values are set
 $error=false;
