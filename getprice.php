@@ -10,13 +10,15 @@ if(!$conn)
 {
     die("Unable to connect.");
 }
-$_POST['iMacPro']="10";
+
+//storing the first key into variable
 reset($_POST);
 $first_key = key($_POST);
-//echo($first_key);
+
+//storing first value into variable
+$first_value = reset($_POST);
 
 //checking and setting flag vaiable
-$first_value = reset($_POST);
 if($first_value==NULL)
 {
         $error=true;
@@ -27,33 +29,32 @@ if($error)
 {   
     die("Radio was not checked");
 }
+
 else
-{   //inserting into database
+{   //Getting the type_id 
     $query = "SELECT type_id from product_type where type_name like \"".$first_key."\";";
-    $row = mysqli_query($conn, $query);
-    $result = mysqli_fetch_row($row);
-    //var_dump($result);
-    $type_id = $result[0];
-    echo $type_id;
     
+    //running the query
+    $row = mysqli_query($conn, $query);
+
+    //getting the value from object row
+    $result = mysqli_fetch_row($row);
+    
+    //storing the value into variable
+    $type_id = $result[0];
+    
+    //getting price with the help of type_if and first value in $_POST
     $query2 = "SELECT price from specifications where type_id =".$type_id." and spec_name like \"".$first_value."\";";
+    
+    //running the query
     $row2=mysqli_query($conn, $query2);
+
+    //getting the value from object row
     $result2 = mysqli_fetch_row($row2);
-    $result2[0];
+
+    //storing price into variable
     $price = $result2[0];
-    //var_dump($result2);
     
     echo $price;
-    /*
-    if($result)
-    {
-        echo("done!");
-    }
-    else
-    {
-        echo("You are not registered (not able to store in database)");
-    }
-    */
 }
-
 ?>
