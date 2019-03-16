@@ -1,84 +1,15 @@
 <html>
 <head>
-<meta http-equiv="refresh" content="1">
-<script src="Function Library.js">
-</script>
-<link rel="stylesheet" href="CSS File.css">
+  <script src="timerpage.js"></script>
+  <link rel="stylesheet" href="timerpage.css">
 </head>
-<body>
-<table border="0" width="100%">
-<tr>
-<td class="timercontent2"></td>
-</tr>
-<tr>
-<td class="timercontent"><h1 class="hometitle">Time to next Apple Conference</h1></td>
-</tr>
-<tr>
-<td class="timercontent" align="center"><script type="text/Javascript">
-var currentTime=new Date()
-	//document.write(currentTime+"<br>")
-	var year=currentTime.getFullYear()
-	var months=currentTime.getMonth()
-	//document.write(months+"<br>")
-	var days=currentTime.getDate()
-	//document.write(days+"<br>")
-	var hours=currentTime.getHours()
-	//document.write(hours+"<br>")
-	var minutes=currentTime.getMinutes()
-	//document.write(minutes+"<br>")
-	var seconds=currentTime.getSeconds()
-	
-	var remainingMonths=9-(months+1)
-	if(months==0||months==2||months==4||months==6||months==7||months==9||months==11)
-	{
-		var remainingDays=31-days
-	}
-	else if(months==3||months==5||months==8||months==10)
-	{
-		var remainingDays=30-days
-	}
-	else if(months==1)
-	{
-		if(year%4==0)
-		{
-			var remainingDays=29-days
-		}
-		else
-		{
-			var remainingDays=28-days
-		}
-	}
-	var totalDays=0
-	for(i=months+1;i<=9;i++)
-	{
-		if(i==0||i==2||i==4||i==6||i==7||i==9||i==11)
-		{
-			totalDays=totalDays+31
-		}
-		else if(i==3||i==5||i==8||i==10)
-		{
-			totalDays=totalDays+30
-		}
-		else if(i==1)
-		{
-			if(year%4==0)
-			{
-				totalDays=totalDays+29
-			}
-			else
-			{
-				totalDays=totalDays+28
-			}
-		}	
-	}
-	var finalDays=totalDays+remainingDays
-	var remainingHours=24-hours
-	var remainingMinutes=60-minutes
-	var remainingSeconds=60-seconds
-	
-	document.write(finalDays+"<font class=timertext> Days</font> "+remainingHours+"<font class=timertext> Hours</font> "+remainingMinutes+"<font class=timertext> Minutes</font> "+remainingSeconds+"<font class=timertext> Seconds</font> ")
-</script></td>
-</tr>
-</table>
+<body class="container">
+  <h1 id="head">Time to Apple WWDC</h1>
+  <ul>
+    <li><span id="days"></span>days</li>
+    <li><span id="hours"></span>Hours</li>
+    <li><span id="minutes"></span>Minutes</li>
+    <li><span id="seconds"></span>Seconds</li>
+  </ul>
 </body>
 </html>
