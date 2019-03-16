@@ -13,9 +13,9 @@ function ButtonClick(buttonName)
 	{
 		document.getElementsByTagName("Object")[0].setAttribute("data","Account Details.html")
 	}
-	else if(buttonName=='Shopping Cart')
+	else if(buttonName=='Login')
 	{
-		document.getElementsByTagName("Object")[0].setAttribute("data","Shopping Cart.html")
+		document.getElementsByTagName("Object")[0].setAttribute("data","Login Page.html")
 	}
 }
 
